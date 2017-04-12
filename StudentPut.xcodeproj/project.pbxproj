@@ -12,6 +12,7 @@
 		6B691C951E9E88CC000B1B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B691C941E9E88CC000B1B6D /* Assets.xcassets */; };
 		6B691C981E9E88CC000B1B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B691C961E9E88CC000B1B6D /* LaunchScreen.storyboard */; };
 		6B691CA21E9E8D6E000B1B6D /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B691CA11E9E8D6E000B1B6D /* StudentTableViewController.swift */; };
+		6B691CA61E9E8E87000B1B6D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B691CA51E9E8E87000B1B6D /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6B691C971E9E88CC000B1B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B691C991E9E88CC000B1B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B691CA11E9E8D6E000B1B6D /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		6B691CA51E9E8E87000B1B6D /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				6B691C8D1E9E88CC000B1B6D /* AppDelegate.swift */,
+				6B691CA41E9E8E72000B1B6D /* Models */,
 				6B691CA31E9E8D74000B1B6D /* ViewControllers */,
 				6B691CA01E9E8C28000B1B6D /* Views */,
 				6B691C9F1E9E8C22000B1B6D /* Resources */,
@@ -86,6 +89,14 @@
 				6B691CA11E9E8D6E000B1B6D /* StudentTableViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B691CA41E9E8E72000B1B6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B691CA51E9E8E87000B1B6D /* Student.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B691CA21E9E8D6E000B1B6D /* StudentTableViewController.swift in Sources */,
+				6B691CA61E9E8E87000B1B6D /* Student.swift in Sources */,
 				6B691C8E1E9E88CC000B1B6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
