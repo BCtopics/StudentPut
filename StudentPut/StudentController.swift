@@ -10,7 +10,7 @@ import Foundation
 
 class StudentController {
     
-    static let baseURL = URL(string: "https://students-e8889.firebaseio.com/")
+    static let baseURL = URL(string: "https://students-e8889.firebaseio.com/students")
     static let getterEndPoint = baseURL?.appendingPathExtension("json")
     
     // Fetch Method

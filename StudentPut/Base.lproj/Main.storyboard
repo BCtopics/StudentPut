@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Student Table View Controller-->
         <scene sceneID="eJd-Rq-Z2W">
             <objects>
-                <tableViewController id="e8y-rR-sdc" sceneMemberID="viewController">
+                <tableViewController id="e8y-rR-sdc" customClass="StudentTableViewController" customModule="StudentPut" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XfJ-lS-bS4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,8 +61,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="C03-sb-RTB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4oR-a5-lp0"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4oR-a5-lp0">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="e8y-rR-sdc" id="3nB-dn-m2u"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="tQo-SK-lWe" id="Oeq-ay-cbL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSH-Ri-eNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
